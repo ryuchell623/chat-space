@@ -1,0 +1,18 @@
+.chat-side
+  .side-header
+    .side-header__info
+      .side-header__info__user-name ryuichi
+      .side-header__info__icons 
+        .side-header__info__icons__new-group
+        =link_to "#" do
+          = icon('fas', 'edit', class: 'info__icons__new-group')
+        .side-header__info__icons__cog 
+        =link_to "#" do
+          = icon('fas', 'cog', class: 'info__icons__cog')
+  .group-lists
+    .group-list
+      .group-list__group-name techcamp
+      .group-list__group-message まだメッセージがありません
+    .group-list
+      .group-list__group-name nerv
+      .group-list__group-message まだメッセージがありません
