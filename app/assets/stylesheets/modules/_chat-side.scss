@@ -7,39 +7,28 @@
   height: 100px;
   background-color: #253141;
   padding: 40px 20px;
-}
-
-.side-header__info {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
-
-.side-header__info__user-name {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-}
-
-.side-header__info__icons {
-  display: flex;
-  line-height: 20px;
-}
-
-.side-header__info__icons__new-group {
-}
-
-.info__icons__new-group {
-  color: #ffffff;
-}
-
-.side-header__info__icons__cog {
-  margin-left: 5px;
-}
-
-.info__icons__cog {
-  color: #ffffff;
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    &__user-name {
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+    &__icons {
+      display: flex;
+      line-height: 20px;
+      &__new-group {
+        color: #ffffff;
+      }
+      &__cog {
+        color: #ffffff;
+        margin-left: 5px;
+      }
+    }
+  }
 }
 
 .group-lists {
@@ -52,26 +41,22 @@
 
 .group-list {
   margin-bottom: 40px;
-}
-
-.group-list__group-name {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.group-list__group-message {
+  &__group-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  &__group-message {
   font-size: 11px;
+  }
 }
 
 .group-list {
   margin-bottom: 40px;
-}
-
-.group-list__group-name {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.group-list__group-message {
+  &__group-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  &__group-message {
   font-size: 11px;
+  }
 }
