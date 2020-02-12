@@ -1,13 +1,14 @@
 .chat-side
   .side-header
     .side-header__info
-      .side-header__info__user-name ryuichi
+      .side-header__info__user-name
+      = current_user.name
       .side-header__info__icons 
         .side-header__info__icons__new-group
         =link_to "#" do
           = icon('fas', 'edit', class: 'info__icons__new-group')
         .side-header__info__icons__cog 
-        =link_to "#" do
+        =link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'info__icons__cog')
   .group-lists
     .group-list
