@@ -1,6 +1,11 @@
 .chat-side {
   width: 300px;
   float: left;
+
+  a, a:hover, a:visited{
+    color:white;
+    text-decoration: none;
+  }
 }
 
 .side-header {
